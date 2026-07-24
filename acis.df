@@ -270,15 +270,6 @@ tg_send_file "$ZIPNAME" "
 
 _Alhamdulillah, action di perbudak_ 🙏"
 
-tg_update "
-tg_send_photo "
-╔══════════════════════════╗
-    ✅ *BUILD SELESAI!* ✅
-╚══════════════════════════╝
-
-📦 *File*    : \`$ZIPNAME\`
-⏱️ *Durasi*  : \`$DURATION\`
-📅 *Date*    : \`$DATE\`
 
 echo "================================================"
 echo " Selesai dalam $DURATION"
