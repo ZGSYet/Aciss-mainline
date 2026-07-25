@@ -97,4 +97,4 @@ jobs:
         run: |
           export PATH="$CLANG_DIR:$GCC64_DIR:$GCC32_DIR:$PATH"
           bash regen.sh
-          ./acis.df
+          bash acis.df
