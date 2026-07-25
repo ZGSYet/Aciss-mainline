@@ -24,7 +24,7 @@ on:
           - KernelSU-Next
 
 env:
-  NEUTRON_URL: https://github.com/Neutron-Toolchains/clang-build-catalogue/releases/download/30062026/neutron-clang-30062026.tar.zst
+  NEUTRON_URL: https://github.com/Neutron-Toolchains/clang-build-catalogue/releases/download/10032024/neutron-clang-10032024.tar.zst
   GCC64_REPO: https://github.com/greenforce-project/gcc-arm64
   GCC32_REPO: https://github.com/greenforce-project/gcc-arm
 
