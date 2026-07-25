@@ -9,7 +9,7 @@ TG_TOKEN="8613137322:AAH3ziSjfOmZqNM-5yh1H5csWFYJv0107KM"
 TG_CHAT_ID="7540957411"
 
 # ── Build Config ─────────────────────────────────────────────────
-DEVICE="courbet"
+DEVICE="sdmsteppe-perf"
 KNAME="Aciss-Mainline"
 VAR="KSU"
 ZIPNAME="${KNAME}-${VAR}.zip"
@@ -215,8 +215,8 @@ Zipping flashable package...
 [ -d "AnyKernel3" ] && rm -rf AnyKernel3
 git clone -q "$ANYKERNEL_REPO" -b "$ANYKERNEL_BRANCH" AnyKernel3
 
-sed -i "s/device\.name1=.*/device.name1=${DEVICE}/"       AnyKernel3/anykernel.sh
-sed -i "s/device\.name2=.*/device.name2=${DEVICE}in/"     AnyKernel3/anykernel.sh
+sed -i "s/device\.name1=.*/device.name1=courbet/"       AnyKernel3/anykernel.sh
+sed -i "s/device\.name2=.*/device.name2=courbetin/"     AnyKernel3/anykernel.sh
 sed -i "s/kernel\.string=.*/kernel.string=${KNAME}/"      AnyKernel3/anykernel.sh
 
 cp "$KERNEL" AnyKernel3/
