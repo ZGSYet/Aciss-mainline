@@ -10,7 +10,7 @@ TG_CHAT_ID="7540957411"
 
 # ── Build Config ─────────────────────────────────────────────────
 DEVICE="courbet"
-KNAME="Deandless-Road"
+KNAME="Aciss-Mainline"
 VAR="KSU"
 ZIPNAME="${KNAME}-${VAR}.zip"
 ANYKERNEL_REPO="https://github.com/ZGSYet/AnyKernel3"
