@@ -24,7 +24,7 @@ on:
           - KernelSU-Next
 
 env:
-  NEUTRON_URL: https://github.com/Neutron-Toolchains/clang-build-catalogue/releases/download/10032024/neutron-clang-10032024.tar.zst
+  NEUTRON_URL: https://github.com/Neutron-Toolchains/clang-build-catalogue/releases/download/30062026/neutron-clang-30062026.tar.zst
   GCC64_REPO: https://github.com/greenforce-project/gcc-arm64
   GCC32_REPO: https://github.com/greenforce-project/gcc-arm
 
@@ -96,4 +96,5 @@ jobs:
           CROSS_COMPILE_ARM32_PREFIX: ${{ steps.prefix.outputs.cross_compile_arm32 }}
         run: |
           export PATH="$CLANG_DIR:$GCC64_DIR:$GCC32_DIR:$PATH"
+          bash regen.sh
           ./acis.df
