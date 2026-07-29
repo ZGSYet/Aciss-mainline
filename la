@@ -15,10 +15,6 @@ VAR="KSU"
 ZIPNAME="${KNAME}-${VAR}.zip"
 ANYKERNEL_REPO="https://github.com/ZGSYet/AnyKernel3"
 ANYKERNEL_BRANCH="master"
-TOOLCHAIN_ROOT="crave-devspaces/kernel/toolchain"
-CLANG_DIR="$TOOLCHAIN_ROOT/clang-neutron/bin"
-GCC64_DIR="$TOOLCHAIN_ROOT/gcc64-greenforce/bin"
-GCC32_DIR="$TOOLCHAIN_ROOT/gcc32-greenforce/bin"
 
 # ── Output Paths ─────────────────────────────────────────────────
 OUT="out"
@@ -30,7 +26,6 @@ DTB="$OUT/arch/arm64/boot/dtb.img"
 export ARCH=arm64
 export KBUILD_BUILD_USER=Aciss
 export KBUILD_BUILD_HOST=TUF-FA5093
-export PATH="$CLANG_DIR:$GCC64_DIR:$GCC32_DIR:$PATH"
 
 SECONDS=0
 DATE=$(date +"%d %B %Y")
