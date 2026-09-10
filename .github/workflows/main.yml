@@ -13,15 +13,6 @@ on:
         required: true
         default: "stable"
         type: string
-        
-      ksu:
-        description: "KernelSU"
-        required: true
-        default: "none"
-        type: choice
-        options:
-          - none
-          - Ksu
 
 jobs:
   build:
@@ -39,11 +30,10 @@ jobs:
         run: |
           git clone -q --depth=1 -b ${{ github.event.inputs.branch }} ${{ github.event.inputs.repo }} kernel
 
-      - name: 🧩 Setup KernelSU
-        if: ${{ github.event.inputs.ksu == 'Ksu' }}
+      - name: 🧩 Setup KernelSU        
         working-directory: kernel
         run: |
-          curl -LSs "curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU-Next/stable/kernel/setup.sh" | bash -s syscall" | bash -s syscall
+          curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU-Next/stable/kernel/setup.sh" | bash -s syscall
                 
       - name: 🔨 Build Kernel
         working-directory: kernel      
