@@ -40,7 +40,7 @@ jobs:
           git clone -q --depth=1 -b ${{ github.event.inputs.branch }} ${{ github.event.inputs.repo }} kernel
 
       - name: 🧩 Setup KernelSU
-        if: ${{ github.event.inputs.ksu == 'KernelSU-Next' }}
+        if: ${{ github.event.inputs.ksu == 'Ksu' }}
         working-directory: kernel
         run: |
           curl -LSs "curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU-Next/stable/kernel/setup.sh" | bash -s syscall" | bash -s syscall
